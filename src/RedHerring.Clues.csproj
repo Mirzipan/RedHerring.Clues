@@ -7,14 +7,14 @@
         <Title>Red Herring Clues</Title>
         <Authors>Mirzipan</Authors>
         <LangVersion>10</LangVersion>
-        <Description>Simple definition system for your data-driven project.</Description>
+        <Description>Simple definition system for your data-driven game.</Description>
         <RepositoryUrl>https://github.com/Mirzipan/RedHerring.Clues</RepositoryUrl>
         <Copyright>2023</Copyright>
         <PackageTags>Clues, Definitions, Data-Driven, Game</PackageTags>    
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageReadmeFile>README.MD</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>
-        <Version>1.1.0</Version>
+        <Version>2.0.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
