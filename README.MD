@@ -41,17 +41,18 @@ Loading and creation of definitions is up to you (you may want to deserialize fr
 Once they are deserialized, you just need to feed them into the `Definitions` instance to 
 
 ```csharp
-public class YourDefinitionLoaded : ILoadDefinitions
-{
-    // implementation of your loader   
-}
+var indexer = new DefinitionIndexer();
+var loader = new DefinitionLoader(indexer);
 
-var loader = new YourDefinitionLoader();
+// add one or more assemblies to indexer and let it process them
+var assembly = AssemblyWithYourDefinitions;
+indexer.AddAssembly(assembly);
+indexer.Index();
+
+// process definitions
 var definitions = new Definitions();
 definitions.Load(loader);
 ```
-
-There is currently no default loader implementation.
 
 ## CompositeId
 
@@ -68,6 +69,7 @@ It contains some basic properties:
 * **Id** - The `CompositeId` used to identify this definition.
 
 You will need to override the `Init` method to create a game-ready definition from raw deserialized data.
+Feel free to raise an exception during `Init`, ideally one that derives from `FailedToInitializeDefinitionException`.
 
 ## Definition Type Attribute
 

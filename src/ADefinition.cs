@@ -3,6 +3,7 @@ using RedHerring.Alexandria.Identifiers;
 
 namespace RedHerring.Clues;
 
+[DeserializedFrom(typeof(ASerializedDefinition))]
 public abstract class ADefinition : IDisposable
 {
     private CompositeId _id;
