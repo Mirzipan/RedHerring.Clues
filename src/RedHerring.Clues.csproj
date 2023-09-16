@@ -24,6 +24,7 @@
 
     <ItemGroup>
       <PackageReference Include="RedHerring.Alexandria" Version="1.0.0" />
+      <PackageReference Include="RedHerring.Deduction" Version="1.0.0" />
     </ItemGroup>
 
 

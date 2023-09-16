@@ -44,10 +44,7 @@ Once they are deserialized, you just need to feed them into the `Definitions` in
 var indexer = new DefinitionIndexer();
 var loader = new DefinitionLoader(indexer);
 
-// add one or more assemblies to indexer and let it process them
-var assembly = AssemblyWithYourDefinitions;
-indexer.AddAssembly(assembly);
-indexer.Index();
+// use RedHerring.Deduction crawler to register indexer and process types
 
 // process definitions
 var definitions = new Definitions();
