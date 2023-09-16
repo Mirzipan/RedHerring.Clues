@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <Title>Red Herring Clues</Title>
+        <Authors>Mirzipan</Authors>
+        <LangVersion>10</LangVersion>
+        <Description>Simple definition system for your data-driven project.</Description>
+        <RepositoryUrl>https://github.com/Mirzipan/RedHerring.Clues</RepositoryUrl>
+        <Copyright>2023</Copyright>
+        <PackageTags>Clues, Definitions, Data-Driven, Game</PackageTags>    
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.MD</PackageReadmeFile>
+        <PackageIcon>icon.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.MD" Pack="true" PackagePath="\"/>
+        <None Include="..\icon.png" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="RedHerring.Alexandria" Version="1.0.0" />
+    </ItemGroup>
+
+
+
+</Project>
